@@ -1,0 +1,6 @@
+<template>
+    <div class="tab-content" id="tab-content-${tab.id}">
+        <compose model.bind="tab.model" view-model.bind="tab.viewModel"></compose>
+        <slot></slot>
+    </div>
+</template>

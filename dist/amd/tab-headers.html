@@ -1,0 +1,9 @@
+<template>
+    <ul class="tabs">
+        <li class="tabs-li ${tab.defaultTab ? 'tabs-li-selected' : ''}" repeat.for="tab of tabs" id="${tab.id}" click.delegate="tabClicked(tab.id)">
+            <button type="button" class="btn tabs-btn" style="width: 100%;">
+                <i class="${tab.icon}"></i> ${tab.label}
+            </button>
+        </li>
+    </ul>
+</template>

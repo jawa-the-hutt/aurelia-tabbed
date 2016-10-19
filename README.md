@@ -87,3 +87,16 @@ We have a basic skeleton tab application, but no tabs to switch between. Lets ad
 ```
 
 The ``<tab-content>`` element is used in three different ways based on how the ``tabSchema`` object is setup. First, we just specified some content right between the opening and closing brackets and because we didn't specify a ``path`` in the ``tabSchema`` object, it will display the HTML. For the second, we populated the ``path`` property in the ``tabSchema`` object, which allows us to dynamically render a ViewModel using the ``<compose>`` element and finally, we do the same thing but pass through an object of data from the ``model`` property in the ``tabSchema`` object.
+
+Finally, there is one more way to use this plugin that almost completely dynamic in nature:
+
+**In your View:**
+```
+<tabs tabs.bind="tabSchema" class="tabs-dark"></tabs>
+
+<tab-wrapper repeat.for="tab of tabSchema">
+	<tab-content tab.bind="tab"></tab-content>
+</tab-sections>
+```
+
+This allows you to let the ``tabSchema`` object do all the heavy lifting for you.  The one caveat is that with this method, you won't be able to manually define HTML in a tab, but have to allow the ``tabSchema`` object be used to load the appropirate view-model.

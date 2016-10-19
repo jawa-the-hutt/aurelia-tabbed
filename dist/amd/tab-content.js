@@ -68,7 +68,10 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
 
         TabContent.prototype.attached = function attached() {
             var self = this;
+
             if (self.element.getAttribute('default-tab')) {
+                self.element.querySelector('.tab-content').classList.add('tab-content-active');
+            } else if (self.tab.defaultTab) {
                 self.element.querySelector('.tab-content').classList.add('tab-content-active');
             }
         };

@@ -55,7 +55,10 @@ export let TabContent = (_dec = customElement('tab-content'), _dec2 = inject(Ele
 
     attached() {
         let self = this;
+
         if (self.element.getAttribute('default-tab')) {
+            self.element.querySelector('.tab-content').classList.add('tab-content-active');
+        } else if (self.tab.defaultTab) {
             self.element.querySelector('.tab-content').classList.add('tab-content-active');
         }
     }

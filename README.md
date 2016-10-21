@@ -2,7 +2,7 @@
 A free tabs component for your Aurelia applications. Allows you to toggle between sections of content, with supports for dynamically composing views with optional data.  This project is based off of the [`aurelia-tabs`](https://github.com/Vheissu/aurelia-tabs) project so it relies pretty heavily on its basic structure.
 
 ## Installation
-1. In your console type: ``npm install aurelia-tabbed --save`` or for Jspm: ``jspm install aurelia-tabbed``
+1. In your console type: ``npm install aurelia-tabbed --save``
 2. During the bootstrapping phase, register the plugin:
 ```
 export function configure(aurelia) {

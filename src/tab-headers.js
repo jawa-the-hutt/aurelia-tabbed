@@ -6,7 +6,7 @@ export class TabHeaders {
 
     @bindable tabs = null;
 
-    constructor(element, ea) {
+    constructor(element) {
         this.element = element;
     }
 

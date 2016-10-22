@@ -47,7 +47,7 @@ import { inject, bindable, customElement } from 'aurelia-framework';
 
 export let TabHeaders = (_dec = customElement('tab-headers'), _dec2 = inject(Element), _dec(_class = _dec2(_class = (_class2 = class TabHeaders {
 
-    constructor(element, ea) {
+    constructor(element) {
         _initDefineProp(this, 'tabs', _descriptor, this);
 
         this.element = element;

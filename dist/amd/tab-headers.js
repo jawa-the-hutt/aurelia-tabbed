@@ -58,7 +58,7 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
     var _dec, _dec2, _class, _desc, _value, _class2, _descriptor;
 
     var TabHeaders = exports.TabHeaders = (_dec = (0, _aureliaFramework.customElement)('tab-headers'), _dec2 = (0, _aureliaFramework.inject)(Element), _dec(_class = _dec2(_class = (_class2 = function () {
-        function TabHeaders(element, ea) {
+        function TabHeaders(element) {
             _classCallCheck(this, TabHeaders);
 
             _initDefineProp(this, 'tabs', _descriptor, this);

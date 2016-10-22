@@ -62,7 +62,7 @@ System.register(['aurelia-framework'], function (_export, _context) {
         }],
         execute: function () {
             _export('TabHeaders', TabHeaders = (_dec = customElement('tab-headers'), _dec2 = inject(Element), _dec(_class = _dec2(_class = (_class2 = function () {
-                function TabHeaders(element, ea) {
+                function TabHeaders(element) {
                     _classCallCheck(this, TabHeaders);
 
                     _initDefineProp(this, 'tabs', _descriptor, this);
